@@ -4,6 +4,8 @@ nuxt.js是解决服务端渲染的组件，在Vue的[官网](https://cn.vuejs.or
 
 >从头搭建一个服务端渲染的应用是相当复杂的。幸运的是，我们有一个优秀的社区项目 [Nuxt.js](https://nuxtjs.org/) 让这一切变得非常简单。Nuxt 是一个基于 Vue 生态的更高层的框架，为开发服务端渲染的 Vue 应用提供了极其便利的开发体验。更酷的是，你甚至可以用它来做为静态站生成器。推荐尝试。
 
+*由于本人是后端开发，前端非精通，本文档是在看视频学习过程中实践的记录，很多地方是以后端的思维去理解融会贯通，如有错误欢迎指正、共同学习~*
+
 
 
 ## 一、准备工作
@@ -30,11 +32,7 @@ vue init nuxt/starter
 
 这个动作一般在VSCode；里面操作方便，安装的时候会先下载模板（可能要一会），下好模板之后会询问一下项目名称、描述等，一路`Enter`即可；
 
-如果是前端解决跨域问题，则需要安装：
-
-```xml
-npm i @gauseen/nuxt-proxy -D
-```
+如果是前端解决跨域问题，则需要安装：`npm i @gauseen/nuxt-proxy -D`
 
 这里前后端都是我自己写，所以可以不用安装，而是在后端controller方法添加`@CrossOrigin`注解即可。
 
@@ -44,7 +42,19 @@ npm i @gauseen/nuxt-proxy -D
 npm install axios --save
 ```
 
-可以用npm axios -v查看版本。
+可以用npm axios -v查看版本。关于为什么要用`--save`是为了下载模块到本地，具体可以参考博客[LINK](https://www.w3h5.com/post/425.html).
+
+### 执行安装
+
+```powershell
+npm install
+```
+
+## 执行启动
+
+```powershell
+npm run dev
+```
 
 
 
@@ -719,7 +729,7 @@ live-server
 
 ## 视频教程链接
 
-本学习文档是根据B站JSPang老师的视频【[nuxtjs](https://www.bilibili.com/video/BV194411G74t?from=search&seid=542615147458306907)】进行记录。
+本学习文档是根据B站JSPang老师的视频【[nuxtjs](https://www.bilibili.com/video/BV194411G74t?from=search&seid=542615147458306907)】进行实践，感觉pang老师的分享~
 
 ## 其他
 
@@ -732,3 +742,6 @@ export 和 export default 的区别 - 枫鸟~ - 博客园 https://www.cnblogs.co
 理解 JavaScript 的 async/await - 边城客栈 - SegmentFault 思否 https://segmentfault.com/a/1190000007535316
 
 npm中全局安装和本地安装的区别 http://www.mamicode.com/info-detail-1758031.html
+
+
+
