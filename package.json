@@ -1,0 +1,34 @@
+{
+    "name": "blog-views",
+    "version": "1.0.0",
+    "description": "Nuxt.js project",
+    "author": "MajorTooooom <2414566866@qq.com>",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "precommit": "npm run lint"
+    },
+    "dependencies": {
+        "@nuxtjs/axios": "^5.11.0",
+        "nuxt": "^2.0.0"
+    },
+    "devDependencies": {
+        "@gauseen/nuxt-proxy": "^1.0.1",
+        "babel-eslint": "^10.0.1",
+        "eslint": "^4.19.1",
+        "eslint-friendly-formatter": "^4.0.1",
+        "eslint-loader": "^2.1.1",
+        "eslint-plugin-vue": "^4.0.0"
+    },
+    "config": {
+        "descriptions": "这个参数是我自己写的，因为json文件不能写注释，下面的是配置端口号",
+        "nuxt": {
+            "host": "127.0.0.1",
+            "port": "3000"
+        }
+    }
+}
